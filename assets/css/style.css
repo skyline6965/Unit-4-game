@@ -11,12 +11,6 @@ body {
     
    }
 
-   .your-number {
-       width: 1200px;
-       height: 100%;
-
-   }
-
 .cars {
     text-align: center;
     background-color: transparent;
@@ -28,10 +22,20 @@ body {
 
 .button {
     text-align: center;
-    max-width: 200px;
+    max-width: 23%;
     float: left;
     padding: 10px;
     margin: auto;
+    box-sizing: border-box;
+}
+
+
+
+.wins, .losses, .speed-limit, .your-speed {
+    float: left;
+    text-align: center;
+    height: 200px;
+    width: 25%;
     box-sizing: border-box;
 }
 

@@ -6,3 +6,22 @@
 
 
 // 
+var speedLimit;
+var yourSpeed;
+var wins;
+var losses;
+
+
+
+function speedLimit(){
+   speedLimit = Math.floor((Math.random() * 121) + 19);
+   console.log(speedLimit);
+
+}
+
+speedLimit();
+
+
+
+
+// var userText = document.getElementById("user-text");<------change number on doc, i.e- "Speed Limit" your speed
