@@ -32,24 +32,24 @@
 
         <div class="speed-limit">
             <h3>Speed Limit</h3>
-                <p>120 MPH</p>
+                <p id="speedLimit"></p>
         </div>
 
         <div class="your-speed">
             <h3>Your Speed</h3>
-                <p>100 MPH</p>
+                <p id="yourSpeed"></p>
         </div>
 
     </div>  
     <div class="cars">
 
-        <div id="audi" class="button" type="button" onclick="audiSpeed()"><img src="./assets/images/Audi.png" alt="audi car"></div>
+        <div id="audi" class="button" onclick="audiSpeed()"><img src="./assets/images/Audi.png" alt="audi car"></div>
 
-        <div class="button viper" onclick="viperSpeed()"><img src="./assets/images/Black_viper.png" alt="viper car"></div>
+        <div id="viper" class="button" onclick="viperSpeed()"><img src="./assets/images/Black_viper.png" alt="viper car"></div>
         
-        <div class="button muscle-car" onclick="chargerSpeed()"><img src="./assets/images/Car.png" alt="muscle-car"></div>
+        <div id="charger" class="button" onclick="chargerSpeed()"><img src="./assets/images/Car.png" alt="muscle-car"></div>
         
-        <div class="button police" onclick="policeSpeed()"><img src="./assets/images/Police.png" alt="policecar"></div>
+        <div id="police" class="button" onclick="policeSpeed()"><img src="./assets/images/Police.png" alt="policecar"></div>
     </div>
 
     <script src="./assets/javascript/game.js" ></script>

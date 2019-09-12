@@ -12,76 +12,76 @@ var wins;
 var losses;
 var reset;
 
-var speed = [audiSpeed,viperSpeed,chargerSpeed,policeSpeed];
+// var yourSpeed = [audiSpeed + viperSpeed + chargerSpeed + policeSpeed];
 
-// var audiSpeed;
-// var viperSpeed;
-// var chargerSpeed;
-// var policeSpeed;
+var audiSpeed;
+var viperSpeed;
+var chargerSpeed;
+var policeSpeed;
 
-// Problem #1, i can click on the car to get its value (number), but if i click on it again, its gives me an error.
 
-// Problem #2, i need to figure out a formula to add the numbers from the cars together to get "Your Speed".
-
-// 
+// cars auto generate number, clicking on picture grabs its value and adds it to the total speed (yourSpeed)
 
 
 
 
-
-
-
-function speedLimit(){
-   speedLimit = Math.floor((Math.random() * 101) + 19);
-   console.log(speedLimit);
+function speedLimit() {
+    speedLimit = Math.floor((Math.random() * 101) + 19);
+    console.log(speedLimit);
+    document.getElementById("speedLimit").innerHTML = (speedLimit + " MPH");
 
 }
 
 
-function audiSpeed(){    
-    audiSpeed = Math.floor((Math.random() * 12) + 1);
-    console.log(audiSpeed);
-    return;
-
-}
-
-function viperSpeed(){    
-    viperSpeed = Math.floor((Math.random() * 12) + 1);
-    console.log(viperSpeed);
-    return(yourSpeed);  
-    
-}
-
-function chargerSpeed(){    
-    chargerSpeed = Math.floor((Math.random() * 12) + 1);
-    console.log(chargerSpeed);    
-    return(yourSpeed);
-
-}
-
-function policeSpeed(){    
-    policeSpeed = Math.floor((Math.random() * 12) + 1);
-    console.log(policeSpeed);    
-    return(chargerSpeed);
-}
-
-
- 
-
-
-// document.getElementById("audi").onclick = function audiSpeed(){
-//     var audiSpeed = Math.floor((Math.random() * 12) + 1);
-//     console.log(audiSpeed);
-//     return(yourSpeed); 
-//     console.log(yourSpeed); 
-// }
-
-
-
-
-// ==================== Call Functions==============================//
-speedLimit();
+var audiSpeed = Math.floor((Math.random() * 12) + 1);
+document.getElementById("audi").onclick = function () {
+audiSpeed;
+console.log(audiSpeed);
+yourSpeed += audiSpeed;
 console.log(yourSpeed);
+
+};
+
+
+
+var viperSpeed = Math.floor((Math.random() * 12) + 1);
+document.getElementById("viper").onclick = function () {
+viperSpeed;
+console.log(viperSpeed);
+yourSpeed += viperSpeed;
+console.log(yourSpeed);
+};
+
+
+var chargerSpeed = Math.floor((Math.random() * 12) + 1);
+document.getElementById("charger").onclick = function () {
+chargerSpeed;
+console.log(chargerSpeed);
+yourSpeed += chargerSpeed;
+console.log(yourSpeed);
+};
+
+
+var policeSpeed = Math.floor((Math.random() * 12) + 1);
+document.getElementById("police").onclick = function () {
+policeSpeed;
+console.log(policeSpeed);
+yourSpeed += policeSpeed;
+console.log(yourSpeed);
+};
+
+
+
+
+    
+
+
+
+
+
+    // ==================== Call Functions==============================//
+    speedLimit();
+    console.log(yourSpeed);
 
 
 
@@ -102,4 +102,4 @@ console.log(yourSpeed);
 //for loop that grabs the first car and randomly generates a number * bonus, no four numbers are the same. ??????
 
 
-// var userText = document.getElementById("user-text");<------change number on doc, i.e- "Speed Limit" your speed
+// var userText = document.getElementById("user-text");<------change number on doc, i.e- "Speed Limit" your
