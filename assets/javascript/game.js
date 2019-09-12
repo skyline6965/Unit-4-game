@@ -10,16 +10,56 @@ var speedLimit;
 var yourSpeed;
 var wins;
 var losses;
+var reset;
+
+var audiSpeed;
+var viperSpeed;
+var chargerSpeed;
+var policeSpeed;
+
+
 
 
 
 function speedLimit(){
-   speedLimit = Math.floor((Math.random() * 121) + 19);
+   speedLimit = Math.floor((Math.random() * 101) + 19);
    console.log(speedLimit);
 
 }
 
+
+function audiSpeed(){    
+    audiSpeed = Math.floor((Math.random() * 12) + 1);
+    console.log(audiSpeed);    
+    
+}
+
+
+ 
+
+// start with an onclick that generates a random number once and adds it to yourSpeed
+
+
+
+
+
+
+
 speedLimit();
+
+
+
+
+
+
+// click on first car, random(x) points added to your speed
+// click on second car, random(y) points added to your speed,
+// thrid car, random (z) points
+// 4th car, random (w) points
+
+// make an onclick function that randomly generates a number between 1 and 12, four times (once for each car)
+// make if statement saying that if x = x, don't run function
+
 
 
 
