@@ -7,15 +7,25 @@
 
 // 
 var speedLimit;
-var yourSpeed;
+var yourSpeed = 0;
 var wins;
 var losses;
 var reset;
 
-var audiSpeed;
-var viperSpeed;
-var chargerSpeed;
-var policeSpeed;
+var speed = [audiSpeed,viperSpeed,chargerSpeed,policeSpeed];
+
+// var audiSpeed;
+// var viperSpeed;
+// var chargerSpeed;
+// var policeSpeed;
+
+// Problem #1, i can click on the car to get its value (number), but if i click on it again, its gives me an error.
+
+// Problem #2, i need to figure out a formula to add the numbers from the cars together to get "Your Speed".
+
+// 
+
+
 
 
 
@@ -30,22 +40,48 @@ function speedLimit(){
 
 function audiSpeed(){    
     audiSpeed = Math.floor((Math.random() * 12) + 1);
-    console.log(audiSpeed);    
+    console.log(audiSpeed);
+    return;
+
+}
+
+function viperSpeed(){    
+    viperSpeed = Math.floor((Math.random() * 12) + 1);
+    console.log(viperSpeed);
+    return(yourSpeed);  
     
+}
+
+function chargerSpeed(){    
+    chargerSpeed = Math.floor((Math.random() * 12) + 1);
+    console.log(chargerSpeed);    
+    return(yourSpeed);
+
+}
+
+function policeSpeed(){    
+    policeSpeed = Math.floor((Math.random() * 12) + 1);
+    console.log(policeSpeed);    
+    return(chargerSpeed);
 }
 
 
  
 
-// start with an onclick that generates a random number once and adds it to yourSpeed
+
+// document.getElementById("audi").onclick = function audiSpeed(){
+//     var audiSpeed = Math.floor((Math.random() * 12) + 1);
+//     console.log(audiSpeed);
+//     return(yourSpeed); 
+//     console.log(yourSpeed); 
+// }
 
 
 
 
-
-
-
+// ==================== Call Functions==============================//
 speedLimit();
+console.log(yourSpeed);
 
 
 
@@ -58,10 +94,12 @@ speedLimit();
 // 4th car, random (w) points
 
 // make an onclick function that randomly generates a number between 1 and 12, four times (once for each car)
-// make if statement saying that if x = x, don't run function
+// make if statement saying that if x = x, don't run function?????
+
+// 
 
 
-
+//for loop that grabs the first car and randomly generates a number * bonus, no four numbers are the same. ??????
 
 
 // var userText = document.getElementById("user-text");<------change number on doc, i.e- "Speed Limit" your speed
