@@ -9,10 +9,10 @@
 
 
 // ===============================Variables================================//
-// var cars = ["audi", "viper", "charger", "popo"];
+// var cars = ["audi", "viper", "charger", "police"];
 var speedLimit;
 var yourSpeed = 0;
-var wins = document.getElementById("winCounter").innerHTML;
+var wins = 0;
 var losses = 0;
 var reset;
 
@@ -26,83 +26,100 @@ var policeSpeed;
 
 function speedLimit() {
     speedLimit = Math.floor((Math.random() * 101) + 19);
-    // console.log(speedLimit);
+    
     document.getElementById("speedLimit").innerHTML = (speedLimit + " MPH");
-
 };
-
-
 
 
 var audiSpeed = Math.floor((Math.random() * 12) + 1);
 document.getElementById("audi").onclick = function () {
     audiSpeed;
-    // console.log(audiSpeed);
     yourSpeed += audiSpeed;
-    // console.log(yourSpeed);
     document.getElementById("yourSpeed").innerHTML = (yourSpeed + " MPH");
     if (yourSpeed > speedLimit) {
         alert("!!!!!!!EXPLOOOOOSSSSSSSSIIIIIIOOOOOOONNNNNNSSSSSSSSSS!!!!!YOU LOSE!!!!");
+        document.getElementById("lossesCounter").innerHTML = losses;
         losses++;
+        document.location.reload();
     } else if (yourSpeed === speedLimit) {
         alert("YOU WIN");
         wins++;
-        
-        
+        document.getElementById("winCounter").innerHTML = wins;
+        document.location.reload();
     };
-    
-    
-    document.getElementById("winCounter").innerHTML = wins;
-    console.log(losses);
-    console.log(wins);
+
+
 
 };
 var viperSpeed = Math.floor((Math.random() * 12) + 1);
 document.getElementById("viper").onclick = function () {
     viperSpeed;
-    // console.log(viperSpeed);
+    
     yourSpeed += viperSpeed;
-    // console.log(yourSpeed);
+    
     document.getElementById("yourSpeed").innerHTML = (yourSpeed + " MPH");
     if (yourSpeed > speedLimit) {
         alert("!!!!!!!EXPLOOOOOSSSSSSSSIIIIIIOOOOOOONNNNNNSSSSSSSSSS!!!!!YOU LOSE!!!!");
-        // losses++;
+        document.getElementById("lossesCounter").innerHTML = losses;
+        losses++;
+        document.location.reload();
     } else if (yourSpeed === speedLimit) {
         alert("YOU WIN");
-    }; 
-    
+        wins++;
+        document.getElementById("winCounter").innerHTML = wins;
+        document.location.reload();
+    };
+
 
 };
 var chargerSpeed = Math.floor((Math.random() * 12) + 1);
 document.getElementById("charger").onclick = function () {
     chargerSpeed;
-    // console.log(chargerSpeed);
+    
     yourSpeed += chargerSpeed;
-    // console.log(yourSpeed);
+    
     document.getElementById("yourSpeed").innerHTML = (yourSpeed + " MPH");
     if (yourSpeed > speedLimit) {
         alert("!!!!!!!EXPLOOOOOSSSSSSSSIIIIIIOOOOOOONNNNNNSSSSSSSSSS!!!!!YOU LOSE!!!!");
-        // losses++;
+        document.getElementById("lossesCounter").innerHTML = losses;
+        losses++;
+        document.location.reload();
     } else if (yourSpeed === speedLimit) {
         alert("YOU WIN");
+        wins++;
+        document.getElementById("winCounter").innerHTML = wins;
+        document.location.reload();
     };
 
 };
 var policeSpeed = Math.floor((Math.random() * 12) + 1);
 document.getElementById("police").onclick = function () {
     policeSpeed;
-    // console.log(policeSpeed);
+    
     yourSpeed += policeSpeed;
-    // console.log(yourSpeed);
+    
     document.getElementById("yourSpeed").innerHTML = (yourSpeed + " MPH");
     if (yourSpeed > speedLimit) {
         alert("!!!!!!!EXPLOOOOOSSSSSSSSIIIIIIOOOOOOONNNNNNSSSSSSSSSS!!!!!YOU LOSE!!!!");
-        // losses++;
+        document.getElementById("lossesCounter").innerHTML = losses;
+        losses++;
+        document.location.reload();
     } else if (yourSpeed === speedLimit) {
         alert("YOU WIN");
+        wins++;
+        document.getElementById("winCounter").innerHTML = wins;
+        document.location.reload();
     };
 
 };
+
+
+console.log(audiSpeed);
+console.log(viperSpeed);
+console.log(chargerSpeed);
+console.log(policeSpeed);
+
+
 
 
 
